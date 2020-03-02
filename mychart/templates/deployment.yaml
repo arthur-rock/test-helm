@@ -41,7 +41,7 @@ spec:
               port: http
           volumeMounts:
             - name: config
-              mounthPath: /etc/nginx/nginx.conf
+              mountPath: /etc/nginx/nginx.conf
               subPath: nginx.conf
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
